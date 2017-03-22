@@ -1,0 +1,752 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'Chunkfive';
+    src: url('../fonts/ChunkFive/chunkfive-webfont.eot');
+    src: url('../fonts/ChunkFive/chunkfive-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ChunkFive/chunkfive-webfont.woff') format('woff'),
+         url('../fonts/ChunkFive/chunkfive-webfont.ttf') format('truetype'),
+         url('../fonts/ChunkFive/chunkfive-webfont.svg#chunkfiveroman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CaviarDreams';
+    src: url('../fonts/Caviar-Dreams/caviardreams-webfont.eot');
+    src: url('../fonts/Caviar-Dreams/caviardreams-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Caviar-Dreams/caviardreams-webfont.woff') format('woff'),
+         url('../fonts/Caviar-Dreams/caviardreams-webfont.ttf') format('truetype'),
+         url('../fonts/Caviar-Dreams/caviardreams-webfont.svg#caviar_dreamsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DroidSans';
+    src: url('../fonts/Droidsans/droidsans-webfont.eot');
+    src: url('../fonts/Droidsans/droidsans-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Droidsans/droidsans-webfont.woff') format('woff'),
+         url('../fonts/Droidsans/droidsans-webfont.ttf') format('truetype'),
+         url('../fonts/Droidsans/droidsans-webfont.svg#droid_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	background-color: #ececec;	
+	font-family: 'CaviarDreams', Arial, sans-serif;
+	font-size: 100%;
+}
+
+#sliderText{
+	font-size: 1.8em;
+	margin:10px;
+	margin-top:30px;
+	
+}
+
+.jumbotron .container {
+	padding-top: 10px;	
+}
+
+h1, h2, h3 {
+	font-family: 'Chunkfive', Arial, sans-serif;	
+}
+
+
+.jumbotron {
+	margin-bottom: 0;	
+}
+
+.jumbotron .row {
+	margin-left: 0;
+	margin-right: 0;	
+}
+
+#map.col-md-8 {
+	padding: 0;	
+}
+
+#galleryBody {
+	padding-top: 30px;	
+}
+
+.hide-desktop,
+.hide-tablet {
+	display: none;	
+}
+
+#dsHeader.row {
+	margin: 0;
+	margin-top: -60px;
+}
+
+.ecrainfo {
+	font-family: 'CaviarDreams', Arial, sans-serif;
+	font-size: 16px;
+	margin-top: -10px;	
+}
+
+#sliderContainer.jumbotron {
+	padding: 0;
+	margin-top: 60px;
+}
+
+#contactJumbo.jumbotron {
+	padding: 0;	
+}
+
+#aboutInner.row {
+		
+}
+
+#aboutJumbo {
+	background: url('../images/bg_about.jpg') no-repeat center;
+	/*background-position: 0px -106px;*/
+	background-size: cover;
+}
+
+#dsHeader #stickyNav,
+#dsHeader #unStickyNav {
+	display: none;	
+}
+
+#dsHeader nav,
+#mbHeader nav {
+	width: 100%;
+	background: #b7da76;
+	height: 60px;
+}
+
+#dsHeader #stickyNav.unsticky {
+	top: -60px;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+#dsHeader #stickyNav.makesticky {
+	visibility: visible;
+	top: 0;
+}
+
+header #mobileNav,
+header #stickyNav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	background-color: #b7da76;
+	box-shadow: 0 3px 10px rgb(25, 25, 25);
+	box-shadow: 0 3px 10px rgba(25, 25, 25, .6);
+}
+
+#sliderContainer {
+	position: relative;
+	overflow: hidden;
+}
+
+.frostedPanel {
+	position: absolute;
+	margin: 20px;
+	padding-top: 10px;
+	width: 100%;
+	background: url('../images/bg_frosted.png');
+}
+
+
+.navigation {
+	font-family: 'Chunkfive', Arial, sans-serif;
+	list-style-type: none;
+	margin: 0 auto;
+	width: 80%;
+	font-size: 2em;
+	line-height: 60px;
+}
+
+.navigation li {
+	float: left;
+	width: 20%;
+	text-align: center;
+	overflow: hidden;
+	-webkit-transform: skew(30deg);
+	-moz-transform: skew(30deg);
+	-0-transform: skew(30deg);
+	transform: skew(30deg);
+	-webkit-transition: all .2s ease;
+	-moz-transition: all .2s ease;
+	-o-transition: all .2s ease;
+	transition: all .2s ease;
+}
+
+.navigation li a {	
+	display: inline-block;
+	width: 100%;
+	color: #545759;
+	-webkit-transform: skew(-30deg);
+	-moz-transform: skew(-30deg);
+	-0-transform: skew(-30deg);
+	transform: skew(-30deg);
+	-webkit-transition: all .2s ease;
+	-moz-transition: all .2s ease;
+	-o-transition: all .2s ease;
+	transition: all .2s ease;
+}
+
+.navigation li:hover,
+.navigation li:focus,
+.navigation li a.active,
+.navigation li a:hover,
+.navigation li a:focus {
+	text-decoration: none;
+	color: #fff !important;
+	background-color: #545759;	
+}
+
+.linkTarget {
+	height: 0;
+	width: 0;	
+}
+
+#stickyNav .logo {
+	width: 35%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 99;
+}
+
+#stickyNav .navigation {
+	width: 70%;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+#mainLogo {
+
+}
+
+
+/* ABOUT SECTION */
+
+.lrgTxt {
+	font-size: 1.5em;
+}
+
+
+
+#aboutSection h3 {
+	color: #222;
+	font-size:1.4em;
+	margin-top: 20px;
+	margin-bottom: 4px;
+}
+
+#aboutSection p {
+	color: #222;
+	font-size:1.2em;
+	line-height: 16px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#aboutText {
+	font-size: 1.8em;
+	margin-top: 20px;
+	padding-bottom: 20px;
+	border-bottom: dashed 1px #999;
+}
+
+
+/* RESIDENTIAL SECTION */
+
+
+#resJumbo {
+	background: url('../images/textures/residential.jpg') repeat center;
+
+}
+
+#resJumbo p {
+	font-size: 1.5em;
+}
+
+#resJumbo h2 {
+	font-size: 2.5em;
+	font-weight: bold;
+}
+
+#resJumbo h3 {
+	font-size: 1.6em;
+	font-weight: normal;
+}
+
+
+
+
+/* COMMERCIAL SECTION */
+
+#comJumbo {
+	background: url('../images/textures/commercial.jpg') repeat center;
+
+}
+
+#comJumbo p {
+	font-size: 1.5em;
+}
+
+#comJumbo h2 {
+	font-size: 2.5em;
+	font-weight: bold;
+}
+
+#comJumbo h3 {
+	font-size: 1.6em;
+	font-weight: normal;
+}
+
+
+/* MEDICAL SECTION */
+
+#medJumbo {
+	background: url('../images/textures/medical.jpg') repeat center;
+}
+
+#medJumbo p {
+	font-size: 1.5em;
+}
+
+#medJumbo h2 {
+	font-size: 2.5em;
+	font-weight: bold;
+}
+
+#medJumbo h3 {
+	font-size: 1.6em;
+	font-weight: normal;
+}
+
+
+/* CONTACT SECTION */
+
+#contact {
+	font-size: 1.4em;	
+	font-weight: bold;
+	color: #545759;
+}
+
+#contactCon {
+	background: url('../images/textures/contact.jpg') repeat center;
+}
+
+#contact h2 {
+	padding-bottom: 2.5%;
+	border-bottom: dashed 1px #545759;
+	color: #545759;
+	font-size: 3em;
+	font-weight: bold;	
+}
+
+.contentBox {
+	margin-bottom: 5%;	
+}
+
+.contentBox p {
+	font-family: 'DroidSans', Arial, sans-serif;
+	padding-top: 5%;	
+}
+
+.contentBox img {
+	display: block;
+	float: none;
+	margin: 0 auto;
+	width: 100%;
+	margin-bottom: 10px;	
+}
+
+.contentBox:first-child {
+		border-bottom: 1px solid #b7da76;	
+		padding-bottom: 5%;
+	}
+
+.contentBox:last-child {
+		padding-top: 5%;
+		border-top: 1px solid #b7da76;	
+	}
+
+#comJumbo .contentBox:first-child {
+		border-bottom: 1px solid #a1a1a1;	
+		padding-bottom: 5%;
+	}
+	
+#comJumbo .contentBox:last-child {
+		padding-top: 5%;
+		border-top: 1px solid #999;	
+	}
+
+#map {
+	width: 100%;	
+	height: 400px;
+}
+
+#mainFooter {
+	color: #EFEFEF;
+	background-color: #545759;
+	background-image: none;
+}
+
+#burgerNav {
+	position: fixed;
+	background-color: #363636;	
+	list-style-type: none;
+	z-index: 9500;
+	width: 100%;
+	top: -400px;
+	padding-left: 0;
+	-webkit-transition: top, .3s, ease-in-out;
+	-moz-transition: top, .3s, ease-in-out;
+	-o-transition: top, .3s, ease-in-out;
+	transition: top, .3s, ease-in-out;
+	left: 0;
+	box-shadow: 0 5px 10px rgb(0, 0, 0);
+	box-shadow: 0 5px 10px rgba(0, 0, 0, .6);
+}
+
+#burgerNav li {
+	float: none;
+	transform: none;
+	width: 100%;	
+}
+
+#burgerNav li a {
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #b7da76;
+	transform: none;
+}
+
+.mobileExpand {
+	top: 60px !important;
+}
+
+.burgerButton {
+	background: url('../images/icon_burger.gif') no-repeat center center;
+	position: absolute;
+	height: 60px;
+	width: 66px;
+	top: 0;
+	right: 0;	
+	cursor: pointer;
+}
+
+#mobileNav {
+	width: 100%;	
+}
+
+#videoJumbo.jumbotron {
+	background-color: #2A2A2A;
+	padding-top: 0;
+	padding-bottom: 0;	
+}
+
+@media (min-width: 420px) {
+	
+	.hide-tablet {
+		display: block;	
+	}
+	
+	.hide-desktop,
+	.hide-mobile {
+		display: none;	
+	}
+	
+	.contentBox img {
+		float: right;
+		border: solid 2px #000;
+		margin-left: 1%;
+		width: 40%;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		-o-border-radius: 4px;
+		border-radius: 4px;
+	}
+	
+
+}
+
+@media (min-width: 768px) {
+	
+	body {
+		font-size: 100%;	
+	}
+	
+	.navigation {
+		font-size: 1.5em;	
+	}
+	
+	.hide-desktop {
+		display: block;	
+	}
+	
+	.hide-tablet,
+	.hide-mobile {
+		display: none;	
+	}
+	
+	#mbHeader {
+		display: none;	
+	}
+	
+	#dsHeader #stickyNav,
+	#dsHeader #unStickyNav {
+		display: block;	
+	}
+	
+	#sliderContainer.jumbotron {
+		margin-top: 0;	
+	}
+	
+	.frostedPanel {
+		position: absolute;
+		top: 0;
+		left: 10%;
+		width: 400px;
+		height: 600px;
+		background: url('../images/bg_frosted.png');
+		margin: 0;
+	}
+	
+	#aboutSection h3 {
+	color: #222;
+	font-size:2.8em;
+	margin-top: 60px;
+	margin-bottom: 100px;
+	}
+	
+	#aboutSection p {
+	color: #222;
+	font-size:2em;
+	line-height: 36px;
+	padding-bottom: 60px;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+	
+	
+	#resJumbo h3 {
+	margin-bottom: 50px;
+	}
+	
+	
+	#comJumbo h3 {
+	margin-bottom: 50px;
+	}
+	
+	#medJumbo h3 {
+	margin-bottom: 50px;
+	}
+	
+
+.contentBox img {
+    transition:opacity .8s; 
+    -webkit-transition:opacity .8s; 
+    -moz-transition:opacity .8s;
+    -o-transition:opacity .8s;
+}
+	
+	
+.contentBox img:hover {
+	opacity: .5;
+}
+
+.jumbotron .container {
+	padding-top: 0;	
+}	
+	
+	
+#contact {
+		font-size: 1.9em;
+	}
+	
+	#contact h2 {
+		font-size: 1.2em;	
+	}
+	
+	#dsHeader.row {
+	margin: 0;
+}
+
+}
+
+@media (min-width: 992px) {
+	
+body {
+	font-size: 125%;	
+}
+
+.navigation {
+	font-size: 1.7em;	
+}
+	
+#map {
+		width: 66%;	
+		height: 400px;
+	}
+	
+	#contact {
+		font-size: 2.4em;
+	}
+	
+	#contact h2 {
+		font-size: 1.5em;	
+	}
+	
+	#resJumbo p {
+		margin-left: 16px;
+		font-size: 1.2em;
+	}
+	
+	#resJumbo h2 {
+		font-size: 2.5em;
+		font-weight: normal;
+	}
+
+	#resJumbo h3 {
+		font-size: 1.4em;
+		font-weight: normal;
+	}
+	
+	#comJumbo p {
+		margin-left: 16px;
+		font-size: 1.2em;
+	}
+	
+	#comJumbo h2 {
+		font-size: 2.5em;
+		font-weight: normal;
+	}
+
+	#comJumbo h3 {
+		font-size: 1.4em;
+		font-weight: normal;
+	}
+	
+	#medJumbo p {
+		margin-left: 16px;
+		font-size: 1.2em;
+	}
+	
+	#medJumbo h2 {
+		font-size: 2.5em;
+		font-weight: normal;
+	}
+
+	#medJumbo h3 {
+		font-size: 1.4em;
+		font-weight: normal;
+	}
+	
+	.contentBox img {
+		float: none;
+		display: block;
+		width: 90%;
+		margin: 0 auto;
+	}
+	
+	.contentBox:first-child {
+		border-bottom: none;
+		border-right: 1px solid #b7da76;	
+		padding-bottom: 0;	
+	}
+	
+	.contentBox:last-child {
+		border-left: 1px solid #b7da76;	
+		border-top: none;
+		padding-top: 0;
+	}
+	
+	#comJumbo .contentBox:first-child {
+		border-right: 1px solid #a1a1a1;	
+		border-bottom: none;
+		padding-bottom: 0;	
+	}
+	
+	#comJumbo .contentBox:last-child {
+		border-left: 1px solid #999;
+		border-top: none;
+		padding-top: 0;	
+	}
+	
+	#mainFooter {
+	background-image: url('../images/logo_footerplug.png');
+	background-position: right 16px top;
+	background-repeat: no-repeat;
+	}
+	
+	#contactJumbo p {
+		font-size: 1.2em;	
+	}
+	
+}
+
+@media (min-width: 1200px) {
+body {
+	font-size: 150%;
+}
+
+.navigation {
+	font-size: 2em;	
+}
+
+#stickyNav .navigation {
+	width: 80%;	
+}
+
+#stickyNav .logo {
+	width: 25%;	
+}
+
+#aboutJumbo {
+	background: url('../images/bg_about.jpg') no-repeat center;
+	background-position: 0px -106px;
+	background-size: cover;
+}
+
+#contactJumbo p {
+		font-size: 1em;	
+}
+	
+}
+
+@media (max-width: 783px) {
+	.frostedPanel {
+		position: absolute;
+		top: 0%;
+		left: 10%;
+		width: 400px;
+		height: 100%;
+		background: url('../images/bg_frosted.png');
+		margin: 0;
+	}
+}
+
+@media (max-width: 520px) {
+	.frostedPanel {
+		position: absolute;
+		margin:0 auto;
+		width: 400px;
+		height: 100%;
+		background: url('../images/bg_frosted.png');
+		margin: 0;
+	}
+}
+
+@media (max-width: 350px) {
+	.frostedPanel {
+		left: 0%;
+	}
+}

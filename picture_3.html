@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Required for proper rendering on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--Using this tag instead, will disable zooming, and only able scrolling, this results in a more native app feel but is not needed for regular websites-->
+<!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">-->
+
+    <title>M-CORE Gallery Page</title>
+	<!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--My css-->
+    <link href="css/main.css" rel="stylesheet">
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	</head>
+	
+<body>
+<div class="container">
+
+	<div class="row">
+		
+    	<div class="col-lg-12">
+			<h1 class="page-header">Skywalk</h1><!--This is making the Header title and line seperation-->
+		</div>
+
+		<div class="col-lg-12">
+				<img class="img-responsive" src="images/gallery/2.jpg" alt="image 3">
+		</div>
+        
+        <div class="col-lg-12">
+			<p>Lighting for hotel skywalk</p>
+		</div>
+        
+	</div><!-- end of row -->
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<!--My javascript-->
+<script src="js/main.js"></script>
+<!--Stock android browser does not display side controls if there is a border-radius or border px style, this fixes that-->
+<script>
+	var nua = navigator.userAgent
+		var isAndroid = (nua.indexOf('Mozilla/5.0') > -1 && nua.indexOf('Android ') > -1 && nua.indexOf('AppleWebKit') > -1 && nua.indexOf('Chrome') === -1)
+			if (isAndroid) {
+  				$('select.form-control').removeClass('form-control').css('width', '100%')
+			}
+</script>
+</body>
+</html>
+

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Required for proper rendering on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--Using this tag instead, will disable zooming, and only able scrolling, this results in a more native app feel but is not needed for regular websites-->
+<!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">-->
+
+    <title>M-CORE Gallery Page</title>
+	<!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!--My css-->
+    <link href="css/lightbox.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	</head>
+	
+<body>
+
+<header>
+<section id="mbHeader" class="row"><!-- Mobile Header Components -->
+<h2 class="hidden">Mobile Navigation and Slider</h2>
+    <nav><!-- Mobile Navigation -->
+    <h2 class="hidden">Mobile Nav</h2>
+    	<div id="mobileNav">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo_stickynav.png" alt="Logo - M-Core Electrical Servics Inc." /></a>
+            </div>
+            <div class="burgerButton">
+            </div>
+        </div>
+    	<ul id="burgerNav" class="navigation">
+        	<li><a href="index.html#aboutTarget" class="link">About</a></li>
+            <li><a href="index.html#resTarget" class="link">Residential</a></li>
+            <li><a href="index.html#comTarget" class="link">Commercial</a></li>
+            <li><a href="index.html#medTarget" class="link">Medical</a></li>
+            <li><a href="index.html#contactTarget" class="link">Contact</a></li>
+        </ul>
+    </nav><!-- end Mobile Navigation -->
+</section><!-- end Mobile Header Components -->
+
+<section id="dsHeader" class="row"><!-- Desktop Header Components -->
+<h2 class="hidden">Desktop Navigation and Slider</h2>
+	<nav id="stickyNav" class="galleryNav"><!-- Desktop Sticky Navigation -->
+    <h2 class="hidden">Sticky Nav</h2>
+    	<div class="logo">
+        	<a href="index.html"><img src="images/logo_stickynav.png" alt="Logo - M-Core Electrical Servics Inc." /></a>
+        </div>
+		<ul class="navigation">
+        	<li><a href="index.html#aboutTarget" class="link">About</a></li>
+            <li><a href="index.html#resTarget" class="link">Residential</a></li>
+            <li><a href="index.html#comTarget" class="link">Commercial</a></li>
+            <li><a href="index.html#medTarget" class="link">Medical</a></li>
+            <li><a href="index.html#contactTarget" class="link">Contact</a></li>
+        </ul>
+    </nav><!-- end Desktop Sticky Navigation -->
+
+</section><!-- end Desktop Header Components -->
+
+</header>
+
+<div class="hidden" id="overlayjs"></div>
+<div id="modal" class="hidden">
+<h2>placeholder title</h2>
+    	<img id="imagePopUp" class="img-responsive responsive" src="http://placehold.it/900x600" alt="placeholder">
+<p>placeholder description</p>
+</div>
+
+
+
+<div id="galleryBody" class="container">
+
+		
+    	<div class="col-lg-12">
+			<h1 class="page-header">Gallery</h1><!--This is making the Header title and line seperation-->
+		</div>
+        
+
+		<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+			<a id="0" class="thumbnail" href="picture_1.html" target="_blank" onclick="return false">
+				<img class="img-responsive responsive" src="images/Gallery/Thumbnails/thumb_0.jpg" alt="Chandelier Thumb">
+			</a>
+		</div>
+
+		<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+			<a id="1" class="thumbnail" href="picture_2.html" target="_blank" onclick="return false">
+				<img class="img-responsive responsive" src="images/Gallery/Thumbnails/thumb_1.jpg" alt="Circuit Print">
+			</a>
+		</div>
+
+		<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+			<a id="2" class="thumbnail" href="picture_3.html" target="_blank" onclick="return false">
+				<img class="img-responsive responsive" src="images/Gallery/Thumbnails/thumb_2.jpg" alt="image 3">
+			</a>
+		</div>
+
+		<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+			<a id="3" class="thumbnail" href="picture_4.html" target="_blank" onclick="return false">
+				<img class="img-responsive responsive" src="images/Gallery/Thumbnails/thumb_3.jpg" alt="image 4">
+			</a>
+		</div>
+
+		<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+			<a id="4" class="thumbnail" href="picture_5.html" target="_blank" onclick="return false">
+				<img class="img-responsive responsive" src="images/Gallery/Thumbnails/thumb_4.jpg" alt="image 5">
+			</a>
+		</div>
+
+		<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+			<a id="5" class="thumbnail" href="picture_6.html" target="_blank" onclick="return false">
+				<img class="img-responsive responsive" src="images/Gallery/Thumbnails/thumb_5.jpg" alt="image 6">
+			</a>
+		</div>
+
+		<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+			<a id="6" class="thumbnail" href="picture_7.html" target="_blank" onclick="return false">
+				<img class="img-responsive responsive" src="images/Gallery/Thumbnails/thumb_6.jpg" alt="image 7">
+			</a>
+		</div>
+
+		<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+			<a id="7" class="thumbnail" href="picture_8.html" target="_blank" onclick="return false">
+				<img class="img-responsive responsive" src="images/Gallery/Thumbnails/thumb_7.jpg" alt="image 8">
+			</a>
+		</div>
+
+		<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+			<a id="8" class="thumbnail" href="picture_9.html" target="_blank" onclick="return false">
+				<img class="img-responsive responsive" src="images/Gallery/Thumbnails/thumb_8.jpg" alt="image 9">
+			</a>
+		</div>
+
+		<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+			<a id="9" class="thumbnail" href="picture_10.html" target="_blank" onclick="return false">
+				<img class="img-responsive responsive" src="images/Gallery/Thumbnails/thumb_9.jpg" alt="image 10">
+			</a>
+		</div>
+
+		<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+			<a id="10" class="thumbnail" href="picture_11.html" target="_blank" onclick="return false">
+				<img class="img-responsive responsive" src="images/Gallery/Thumbnails/thumb_10.jpg" alt="image 11">
+			</a>
+		</div>
+
+		<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+			<a id="11" class="thumbnail" href="picture_12.html" target="_blank" onclick="return false">
+				<img class="img-responsive responsive" src="images/Gallery/Thumbnails/thumb_11.jpg" alt="image 12">
+			</a>
+		</div><!-- end gallery -->
+        
+	</div><!-- end of row -->
+    
+    
+<div id="mainFooter" class="jumbotron">
+    <div class="row">
+        <footer class="col-md-12 text-center">
+            <h2>&copy; M-CORE Electrical Services Inc. 2014</h2>
+            <h3 class="ecrainfo">ECRA 7009998</h3>
+        </footer>
+    </div>
+</div><!--close jumbotron-->
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<!--My javascript-->
+<script src="js/main.js"></script>
+<!--Stock android browser does not display side controls if there is a border-radius or border px style, this fixes that-->
+<script>
+	var nua = navigator.userAgent
+		var isAndroid = (nua.indexOf('Mozilla/5.0') > -1 && nua.indexOf('Android ') > -1 && nua.indexOf('AppleWebKit') > -1 && nua.indexOf('Chrome') === -1)
+			if (isAndroid) {
+  				$('select.form-control').removeClass('form-control').css('width', '100%')
+			}
+</script>
+<script src="js/lightbox.js"></script>
+<script src="js/vidscrollspy.js"></script>
+</body>
+</html>
